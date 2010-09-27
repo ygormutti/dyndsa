@@ -1,4 +1,4 @@
-//      dynset.c
+//      exemplos.c
 //
 //      Copyright 2010 Ygor Mutti <ygormutti@dcc.ufba.br>
 //
@@ -17,7 +17,7 @@
 //      Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 //      MA 02110-1301, USA.
 
-#include "dynset.h"
+#include "exemplos.h"
 
 int datecmp(date x, date y){
     if (x.year == y.year){
@@ -38,8 +38,6 @@ int datecmp(date x, date y){
 CDYNSET(DoubleSet, double, CMP)
 CDYNSET(IntSet, int, CMP)
 CDYNSET(DateSet, date, datecmp)
-
-
 
 void IntSet_print(IntSet *setpntr){
     int *i;

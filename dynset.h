@@ -170,18 +170,3 @@ type *name##_iter(name *setpntr){                                               
  * address.
  */
 # define CMP(x, y) ((x) - (y))
-
-typedef struct {
-    short int year, month, day;
-} date;
-
-HDYNSET(DateSet, date)
-
-HDYNSET(DoubleSet, double)
-
-HDYNSET(IntSet, int)
-
-void IntSet_print(IntSet *setpntr);
-void DoubleSet_print(DoubleSet *setpntr);
-void DateSet_print(DateSet *setpntr);
-
